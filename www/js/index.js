@@ -174,4 +174,9 @@ mc.on("tap", function(ev) {
     incrementValue();
 });
 
-        
+document.addEventListener('deviceready', function(){
+    var package = "com.el3zahaby.addad"; // facebook app.
+    $("#openStore").click(function(){
+        cordova.plugins.market.open(package); 
+    });
+}, false);
