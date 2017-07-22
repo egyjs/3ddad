@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <title>3ddad al azkar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialIcon.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <style>
+    .collection .collection-item {
+         border-left: 1px solid #e0e0e0;
+    }
+    </style>
+</head>
+
+<body onload="document.getElementById('number').innerHTML = localStorage.getItem('valueAR');">
+      <div class="modal-overlay" id="nightly" style="z-index: -1002; opacity: 0.7;"></div>
+
+    <!-- blob -->
+    <!--audio id="AndroidBlobLocal" src="file:///android_asset/www/sounds/blop.mp3" type="audio/mpeg" ></audio>
+    <audio id="BlobHttp" src="https://raw.githubusercontent.com/el3zahaby/3ddad/master/www/sounds/blop.mp3" type="audio/mpeg" ></audio-->
+    <audio id="Blob" src="sounds/blop.mp3" type="audio/mpeg" ></audio>
+    <!-- Pop -->
+    <!--audio id="AndroidPopLocal" src="file:///android_asset/www/sounds/PopCork.mp3" type="audio/mpeg" ></audio>
+    <audio id="PopHttp" src="https://raw.githubusercontent.com/el3zahaby/3ddad/master/www/sounds/PopCork.mp3" type="audio/mpeg" ></audio-->
+    <audio id="Pop" src="sounds/PopCork.mp3" type="audio/mpeg" ></audio>
+    
+	<script>  
+		if(localStorage.getItem("valueAR") == null){
+			localStorage.setItem("valueAR",  '۰');  
+		}
+	</script>
+    
+      <div class="fullscreen"  style="">
+        <div class="center-top ">
+            <a id="reset" style="display: none;" onclick="localStorage.setItem('valueAR', '۰');location.reload();" class="btn btn-block">
+                ابدأ من جديد
+            </a>
+         </div>
+         <div onclick="" id="number" class="center">۰</div>
+         <div id="Cthekr" class="center-bottom" style="
+            z-index: -1;
+            font-size: 25px;
+            color: rgb(19, 56, 255);
+            ">اضغط مطولا على الشاشة لتظهر القائمة ثم اضغط من جديد لإخفائها</div>
+      </div>
+    
+      <div id="bottom-menu"  style="display: none;">
+         <div class="collection center-bottom row" style="margin:0; background: #fff;">
+            <div class="col s6" style="padding: 0;">
+               <a  onclick="$('#modal1').modal('open');" class="collection-item">الاعدادات <i class="tiny material-icons">settings</i></a>
+               <a onclick="shareApp();" class="collection-item">مشاركة <i class="tiny material-icons">share</i></a>
+            </div>
+            <div class="col s6" style="padding: 0;">
+               <a href="chose.html" class="collection-item">اختيار الذكر <i class="tiny material-icons">menu</i></a>
+               <a href="market://details?id=com.el3zahaby.addad"
+                onclick='window.open("market://details?id=com.el3zahaby.addad");", "_system");'
+                  class="collection-item disabled">قيم التطبيق  <i class="tiny material-icons">star</i></a>
+            </div>
+         </div>
+      </div>
+      <!-- Modal Structure -->
+      <div style="text-align: right" id="modal1" class="modal">
+         <style>
+            .modal-content p{
+            border-top: 1px solid #eee;
+            padding: 11px 0px;
+            border-bottom: 1px solid #eee;
+            }
+         </style>
+         <div class="modal-content">
+            <h4>الاعدادات</h4>
+            <p>
+               <input onclick="$('#modal1').modal('close');longClicks();nightly();" type="checkbox" class="filled-in" id="filled-in-box" />
+               <label for="filled-in-box">ليلي</label>
+            </p>
+         </div>
+         <div class="modal-footer">
+            <b class="modal-close">اغلاق وحفظ</b>
+         </div>
+      </div>
+    
+    
+
+    
+    <script src="js/materialize.min.js"></script>
+    <script src="js/hammer.min.js"></script>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

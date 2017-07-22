@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.el3zahaby.addad" version="1.3" versionCode="3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>عداد الذِكر | عداد التسبيح</name>
+    <description>
+        عداد الذكر .. اذكر الله .. اضغط على الشاشة لتحسب عدد ذكرك
+    </description>
+    <author email="el0zahaby@gmail.com" href="http://fb.com/el3zahaby">
+        عبدالرحمن الذهبي
+    </author>
+    <content src="preloader.html" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="15" />
+    <platform name="android">
+        <icon density="ldpi" src="www/res/icon/android/ldpi.png" />
+        <icon density="mdpi" src="www/res/icon/android/mdpi.png" />
+        <icon density="hdpi" src="www/res/icon/android/hdpi.png" />
+        <icon density="xhdpi" src="www/res/icon/android/xhdpi.png" />
+        <icon density="xxhdpi" src="www/res/icon/android/xxhdpi.png" />
+        <icon density="xxxhdpi" src="www/res/icon/android/xxxhdpi.png" />
+    </platform>
+    <platform name="android">
+        <preference name="orientation" value="portrait" />
+        <preference name="fullscreen" value="true" />
+        <allow-intent href="market:*" />
+    </platform>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <engine name="android" spec="^6.2.3" />
+    <plugin name="cordova-plugin-dialogs" spec="~1.2.1" />
+    <plugin name="cordova-plugin-network-information" spec="~1.2.0" />
+    <plugin name="cordova-plugin-vibration" spec="~2.1.5" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.2.1" />
+    <plugin name="cordova-plugin-media" spec="https://github.com/el3zahaby/cordova-plugin-media.git" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.3.0" />
+</widget>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+        <title>chose zekr</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/materialIcon.css">
+        <link rel="stylesheet" href="css/materialize.min.css">
+    </head>
+    <body >
+  <nav>
+    <div class="nav-wrapper teal ">
+        <ul>
+        <li class="right"><img style="max-height: 59px;display: table;padding: 0px 8px;" alt="logo" src="img/logo.png" ></li>
+        <li class="left"><a href="index.html"><i class="material-icons right">arrow_back</i></a></li>
+        </ul>
+    </div>
+  </nav>
+                  <style>
+            ul:not(.browser-default) {
+            padding-right: 0;
+            list-style-type: none;
+            }
+        </style>
+        <div class="jumbotron" dir="rtl">
+            <div class="container">
+                <div class="well" style="background: #eee;">
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add</i> أستغفر الله واتوب إليه</div>
+                            <div class="collapsible-body">
+                                <span>﴿وَمَا كَانَ اللَّهُ لِيُعَذِّبَهُمْ وَأَنْتَ فِيهِمْ <b>وَمَا كَانَ اللَّهُ مُعَذِّبَهُمْ وَهُمْ يَسْتَغْفِرُونَ</b>﴾</span>
+                                <a onclick="chose(' أستغفر الله واتوب إليه');" class="btn-floating"><i class="material-icons">add</i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add</i>لا إله إلا الله وحده لا شريك له ، له الملك وله الحمد وهو على كل شيء قدير</div>
+                            <div class="collapsible-body">
+                                <span>قال رسول الله صلى الله عليه وسلم (( إن الله قد حرم على النار من قال <b>لا إله إلا الله يبتغي بذلك وجه الله </b>) ) <small class="tiny">البخاري</small></span>
+                                <a onclick="chose('لا إله إلا الله وحده لا شريك له ، له الملك وله الحمد وهو على كل شيء قدير');" class="btn-floating"><i class="material-icons">add</i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add</i>  سبحان الله وبحمده</div>
+                            <div class="collapsible-body">
+                                <span>قال تعالى : (يَا أَيُّهَا الَّذِينَ آمَنُوا اذْكُرُوا اللَّهَ ذِكْرًا كَثِيرًا*<b>وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا</b>)</span>
+                                <a onclick="chose('سبحان الله وبحمده');" class="btn-floating"><i class="material-icons">add</i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add</i> الحمدلله</div>
+                            <div class="collapsible-body">
+                                <span>﴿وَقَالُوا الْحَمْدُ لِلَّهِ الَّذِي أَذْهَبَ عَنَّا الْحَزَنَ إِنَّ رَبَّنَا لَغَفُورٌ شَكُورٌ ، الَّذِي أَحَلَّنَا دَارَ الْمُقَامَةِ مِنْ فَضْلِهِ لا يَمَسُّنَا فِيهَا نَصَبٌ وَلا يَمَسُّنَا فِيهَا لُغُوبٌ ﴾</span>
+                                <a onclick="chose('الحمدلله');" class="btn-floating"><i class="material-icons">add</i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">add</i>ذكر اخر</div>
+                            <div class="collapsible-body">
+                                <input value="" id="thekr_name" type="text" placeholder="اكتب الذكر">
+                                <a onclick="chose($('#thekr_name').val());" class="btn btn-block"><i class="material-icons">add</i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/materialize.min.js"></script>
+    </body>
+</html>
